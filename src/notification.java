@@ -15,6 +15,10 @@ public class notification {
         this.status = "Whats up mane";
     }
 
+    public String getStatus() {
+        return status;
+    }
+
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }

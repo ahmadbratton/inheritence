@@ -17,10 +17,13 @@ public class EmailNotification extends notification{
         return smtpProvider;
     }
 
+
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return this;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -44,11 +47,11 @@ public class EmailNotification extends notification{
     @Override
     public void transport() {
         System.out.println(getCreatedAt());
-        System.out.println(this.recipient);
-        System.out.println(this.smtpProvider);
+        System.out.println(getRecipient());
+        System.out.println(getSmtpProvider());
         System.out.println(getBody());
         System.out.println(getSubject());
-        System.out.println(status);
+        System.out.println(getStatus());
     }
 
     @Override

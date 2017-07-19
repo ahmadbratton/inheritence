@@ -10,12 +10,19 @@ public class TextNotification extends notification {
 
     }
 
+    public String getRecipient() {
+        return recipient;
+    }
+
+    public String getSmsProvider() {
+        return smsProvider;
+    }
 
     @Override
     public void transport() {
         System.out.println(getCreatedAt());
-        System.out.println(this.recipient);
-        System.out.println(this.smsProvider);
+        System.out.println(getRecipient());
+        System.out.println(getSmsProvider());
         System.out.println(getBody());
         System.out.println(getSubject());
     }
