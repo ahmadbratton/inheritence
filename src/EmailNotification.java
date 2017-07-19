@@ -21,7 +21,7 @@ public class EmailNotification extends notification{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return this;
+        return new EmailNotification(super.getSubject(), super.getBody(), this.getRecipient(),this.getSmtpProvider());
     }
 
 
