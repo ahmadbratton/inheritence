@@ -1,14 +1,14 @@
 import java.time.LocalDateTime;
 
 
-public class notification {
+public class Notification {
     private LocalDateTime createdAt;
     private String subject;
     private String body;
     protected String status;
 
 
-    public notification(String subject, String body) {
+    public Notification(String subject, String body) {
         this.subject = subject;
         this.body = body;
         this.createdAt = LocalDateTime.now();

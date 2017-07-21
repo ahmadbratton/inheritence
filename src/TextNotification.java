@@ -1,4 +1,4 @@
-public class TextNotification extends notification {
+public class TextNotification extends Notification {
     private String recipient;
     private String smsProvider;
 
